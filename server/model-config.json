@@ -33,6 +33,9 @@
   "user": {
     "dataSource": "db",
     "public": true,
-    "options": {}
+    "options": {
+      "caseSensitiveEmail": false,
+      "emailVerificationRequired": false
+    }
   }
 }
