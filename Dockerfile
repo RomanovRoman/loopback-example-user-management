@@ -16,4 +16,4 @@ RUN npm install --only=production --quiet --no-cache git
 
 RUN apk del native-deps
 
-CMD ["npm", "start"]
+CMD ["node", "."]
