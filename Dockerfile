@@ -2,10 +2,7 @@ FROM node:10-alpine
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
-COPY client ./
-COPY server ./
-COPY common ./
+COPY . .
 
 RUN apk --no-cache add --virtual native-deps \
   g++ gcc libgcc libstdc++ linux-headers make python git bash
